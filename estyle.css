@@ -127,8 +127,8 @@ body {
 }
 
 .botones:hover {
-    background-color: rgb(189, 189, 6);
-    color: white;
+    color: hsl(60, 100%, 60%);
+    background-color: rgb(8, 8, 8);
 }
 
 .botones:active {
