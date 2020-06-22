@@ -1,0 +1,142 @@
+body {
+    background-image: linear-gradient(90deg, rgb(29, 28, 28), rgb(66, 77, 109));
+}
+
+.titulo {
+    color: hsl(60, 100%, 60%);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lista {
+    list-style: none;
+    margin-left: -25px;
+}
+
+.cuerpo {
+    color: white;
+    width: 80vh;
+    border: solid 0.5px black;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    background-image: linear-gradient(45deg, rgb(163, 163, 175), rgb(57, 57, 61), rgb(186, 186, 197));
+}
+
+.nota {
+    text-align: left;
+    margin-bottom: -.8rem;
+    display: block;
+
+}
+
+
+.listado-notas:hover {
+    color: hsl(60, 100%, 60%);
+    background-image: linear-gradient(90deg,rgb(19, 19, 20),rgba(35, 42, 104, 0.699));
+    border-radius: 10px;
+    transition: all 0.1s;
+    padding-left: 3px;
+    padding-bottom: 2px;
+
+}
+
+
+.boton-eliminar {
+    height: 1.3rem;
+    width:  1.3rem;
+    float: right;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.boton-eliminar:hover {
+    height: 1.2rem;
+    width:  1.2rem;
+    background-color: red;
+    padding: 2px;
+    border-radius: 50%;
+    transition: .2s;
+    margin-top: 2px;
+}
+
+.tachado:checked+span {
+    color: rgb(70, 235, 55);
+    text-decoration: line-through;
+}
+
+.ingresar-nota {
+    width: 27rem;
+    border-radius: 25px;
+    padding: .5rem;
+    font-size: 1.3rem;
+}
+
+.comentario {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-overflow: ellipsis;
+
+}
+
+.tachado {
+    display: none;
+}
+
+.comentario:before {
+    content: '';
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    height: 1.3rem;
+    width:  1.3rem;
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+
+.tachado:checked+.comentario::before {
+    content: '✓';
+    font-size: 1.4rem;
+    color: rgb(33, 33, 48);
+    padding: .1rem;
+    background-color: rgb(14, 235, 32);
+}
+
+
+
+.botones {
+    background-color: rgb(218, 216, 216);
+    padding-right: .3rem;
+    padding-left:  .3rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 6px;
+    border: solid .5px;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serifsdf;
+    font-size: .8rem;
+}
+
+
+.contador {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.botones:hover {
+    background-color: rgb(8, 212, 8);
+    color: white;
+}
+
+.botones:active {
+    background-color: rgb(255, 115, 0);
+    color: white;
+}
+@media (max-width:550px){
+    .cuerpo{
+width: 500px;
+    }
+}
